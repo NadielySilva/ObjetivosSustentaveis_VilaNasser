@@ -15,9 +15,14 @@ const Container = styled.div`
 
 const List = styled.ul`
   width: 50vw;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 1024px){
+    width: 50vw;
+  }
 `;
 
 const ListItem = styled.li`
@@ -30,24 +35,28 @@ const ListItem = styled.li`
   width: 12vw;
   height: 10vh;
 
+  @media screen and (max-width: 1024px){
+    font-size: 0.85rem;
+    width: 12vw;
+  };
+
   :hover{
-      color: #FF9F1C;
-      cursor: pointer;
-      border-bottom: 3px solid #FF9F1C;
+    color: #FF9F1C;
+    cursor: pointer;
+    border-bottom: 3px solid #FF9F1C;
   }
+  
 `;
 
 export default function Menu() {
   return (
     <Container>
-      <nav>
-        <List>
-            <ListItem>Início</ListItem>
-            <ListItem>Vila Nasser</ListItem>
-            <ListItem>Objetivos</ListItem>
-            <ListItem>Portifólio</ListItem>
-        </List>
-      </nav>
+      <List>
+        <ListItem>Início</ListItem>
+        <ListItem>Vila Nasser</ListItem>
+        <ListItem>Objetivos</ListItem>
+        <ListItem>Portifólio</ListItem>
+      </List>
     </Container>
   )
 }
