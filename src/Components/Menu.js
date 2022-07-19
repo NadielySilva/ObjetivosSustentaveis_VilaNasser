@@ -11,6 +11,11 @@ const Container = styled.div`
   height: 10vh;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 480px){
+    width: 80vw;
+    height: 5vh;
+  }
 `;
 
 const List = styled.ul`
@@ -22,6 +27,11 @@ const List = styled.ul`
 
   @media screen and (max-width: 1024px){
     width: 50vw;
+  }
+
+  @media screen and (max-width: 480px){
+    width: 80vw;
+    height: 5vh;
   }
 `;
 
@@ -35,16 +45,24 @@ const ListItem = styled.li`
   width: 12vw;
   height: 10vh;
 
-  @media screen and (max-width: 1024px){
-    font-size: 0.85rem;
-    width: 12vw;
-  };
-
   :hover{
     color: #FF9F1C;
     cursor: pointer;
     border-bottom: 3px solid #FF9F1C;
   }
+
+  @media screen and (max-width: 1024px){
+    font-size: 0.85rem;
+    width: 12vw;
+  }
+
+  @media screen and (max-width: 480px){
+    word-break: break-word;
+    line-height: 2.5vh;
+    width: 19.5vw;
+    height: 5vh;
+  }
+  
   
 `;
 

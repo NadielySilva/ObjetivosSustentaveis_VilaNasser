@@ -20,8 +20,9 @@ const Container = styled.div`
     height: 10vh;
   }
 
-  @media screen (max-width: 1024px){
-    height: 10vh;
+  @media screen (max-width: 480px){
+    height: 5vh;
+    padding: 0;
   }
 `;
 
@@ -33,6 +34,11 @@ const Logo = styled.img`
   @media screen (max-width: 1024px){
     width: 6vw;
     height: 8vh;
+  }
+
+  @media screen and (max-width: 480px){
+    width: 10vw;
+    height: 5vh;
   }
 `;
 
