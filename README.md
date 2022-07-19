@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Reference
+
+<a target="_blank" href="https://icons8.com/icon/58058/united-nations">United Nations</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a># ObjetivosSustentaveis_VilaNasser
