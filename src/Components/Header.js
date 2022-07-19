@@ -8,18 +8,18 @@ import Menu from './Menu';
 import UNLogo from "../Assets/UN_Logo.png"
 
 const Container = styled.div`
-    width: 100%;
-    height: 12vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #628A56;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #628A56;
 `;
 
 const Logo = styled.img`
-    width: 8vw;
-    height: 10vh;
-    object-fit: contain;
+  width: 8vw;
+  height: 10vh;
+  object-fit: contain;
 `;
 
 export default function Header() {
