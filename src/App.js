@@ -6,6 +6,11 @@ import Header from './Components/Header';
 import Banner from './Components/Banner';
 import Main from './Components/Main';
 
+//FONTS
+// font-family: 'Nunito', sans-serif;
+// font-family: 'Kanit', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
 const GlobalStyle = createGlobalStyle`
   *{
     padding: 0;

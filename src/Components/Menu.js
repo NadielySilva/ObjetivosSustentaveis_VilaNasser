@@ -12,7 +12,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 426px){
     width: 80vw;
     height: 5vh;
   }
@@ -25,11 +25,11 @@ const List = styled.ul`
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (max-width: 1024px){
+  @media screen and (max-width: 1025px){
     width: 50vw;
   }
 
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 426px){
     width: 80vw;
     height: 5vh;
   }
@@ -51,15 +51,28 @@ const ListItem = styled.li`
     border-bottom: 3px solid #FF9F1C;
   }
 
-  @media screen and (max-width: 1024px){
+  @media screen and (max-width: 1441px){
+    font-size: 1.5rem;
+    width: 12vw;
+  }
+
+  @media screen and (max-width: 1025px){
     font-size: 0.85rem;
     width: 12vw;
   }
 
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 426px){
     word-break: break-word;
-    line-height: 2.5vh;
+    line-height: 5vh;
     width: 19.5vw;
+    height: 5vh;
+  }
+
+  @media screen and (max-width: 376px){
+    font-size: 0.75rem;
+    word-break: break-word;
+    line-height: 5vh;
+    width: 19vw;
     height: 5vh;
   }
   

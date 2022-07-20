@@ -13,16 +13,14 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 18px 0 18px;
   background-color: #628A56;
 
   @media screen (max-width: 1024px){
     height: 10vh;
   }
 
-  @media screen (max-width: 480px){
+  @media screen (max-width: 426px){
     height: 5vh;
-    padding: 0;
   }
 `;
 
@@ -36,7 +34,7 @@ const Logo = styled.img`
     height: 8vh;
   }
 
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 426px){
     width: 10vw;
     height: 5vh;
   }
