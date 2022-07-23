@@ -3,18 +3,26 @@ import styled from 'styled-components';
 
 //IMPORTING COMPONENTS
 import Highlight from './Highlight';
+import Card from './Card';
+import Statistics from './Statistics';
 
 const Container = styled.div`
   width: 100%;
   height: 100vh;
-  padding-top: 18px;
-  padding-left: 18px;
+
 `;
+
+
 
 export default function Main() {
   return (
     <Container>
-      <Highlight />
+      <div>
+        <Highlight />
+        <Highlight />
+      </div>
+      <Card />
+      <Statistics />
     </Container>
   )
 }

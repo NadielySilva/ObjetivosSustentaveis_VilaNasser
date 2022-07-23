@@ -15,10 +15,6 @@ const Container = styled.div`
   justify-content: space-between;
   background-color: #628A56;
 
-  @media screen (max-width: 1024px){
-    height: 10vh;
-  }
-
   @media screen (max-width: 426px){
     height: 5vh;
   }
@@ -28,11 +24,6 @@ const Logo = styled.img`
   width: 6vw;
   height: 8vh;
   object-fit: contain;
-
-  @media screen (max-width: 1024px){
-    width: 6vw;
-    height: 8vh;
-  }
 
   @media screen and (max-width: 426px){
     width: 10vw;

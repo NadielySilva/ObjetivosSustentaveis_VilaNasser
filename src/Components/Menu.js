@@ -25,10 +25,6 @@ const List = styled.ul`
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (max-width: 1025px){
-    width: 50vw;
-  }
-
   @media screen and (max-width: 426px){
     width: 80vw;
     height: 5vh;
@@ -37,8 +33,10 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   font-family: 'Kanit', sans-serif;
+  font-size: 1rem;
   text-align: center;
   text-transform: uppercase;
+  word-break: break-word;
   color: #FFFFFF;
   line-height: 10vh;
   list-style-type: none;
@@ -51,32 +49,13 @@ const ListItem = styled.li`
     border-bottom: 3px solid #FF9F1C;
   }
 
-  @media screen and (max-width: 1441px){
-    font-size: 1.5rem;
-    width: 12vw;
-  }
-
-  @media screen and (max-width: 1025px){
-    font-size: 0.85rem;
-    width: 12vw;
-  }
-
   @media screen and (max-width: 426px){
+    font-size: 0.85rem;
     word-break: break-word;
     line-height: 5vh;
     width: 19.5vw;
     height: 5vh;
   }
-
-  @media screen and (max-width: 376px){
-    font-size: 0.75rem;
-    word-break: break-word;
-    line-height: 5vh;
-    width: 19vw;
-    height: 5vh;
-  }
-  
-  
 `;
 
 export default function Menu() {

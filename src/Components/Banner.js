@@ -14,7 +14,9 @@ const Container = styled.div`
   height: 50vh;
   display: flex;
   border-radius: 0 0 18px 18px;
+  margin-bottom: 24px;
   background-color: #628A56;
+  
 
   @media screen and (max-width: 426px){
     width: 100%;
@@ -46,10 +48,10 @@ const HighlightedText = styled.p`
   font-weight: bold;
   font-size: 1rem;
   color: #FFBF69;
-  line-height: 1rem;
+  line-height: 1.05rem;
   height: 3vh;
 
-  @media screen and (min-width: 744px){
+  @media screen and (max-width: 744px){
     font-size: 1rem;
     line-height: 1.05rem;
     height: 3vh;
@@ -71,8 +73,7 @@ const Title = styled.h1`
   width: 45vw;
   height: 15vh;
 
-
-  @media screen and (min-width: 744px){
+  @media screen and (max-width: 744px){
     font-weight: 600;
     font-size: 2rem;
     line-height: 2.05rem;
@@ -96,7 +97,7 @@ const Paragraph = styled.p`
   width: 45vw;
   height: 10vh;
 
-  @media screen and (min-width: 744px){
+  @media screen and (max-width: 744px){
     font-size: 1rem;
     line-height: 1.05rem;
     height: 12vh;
@@ -154,7 +155,7 @@ const OrangeSemicircle = styled.div`
   clip-path: circle(42% at 11.75rem 85%);
   background-color: #FF9F1C;
 
-  @media screen and (min-width: 744px){
+  @media screen and (max-width: 744px){
     clip-path: circle(40% at 9rem 85%);
   }
 
@@ -171,7 +172,7 @@ const BannerImg = styled.img`
   position: relative;
   object-fit: contain;
 
-  @media screen and (min-width: 744px){
+  @media screen and (max-width: 744px){
     top: 0.70vh;
   }
 
