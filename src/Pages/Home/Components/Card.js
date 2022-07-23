@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 //IMPORTING ASSETS
-import Among_Nature from "../Assets/Among_Nature.png"
-import Barista from "../Assets/Barista.png"
-import Book from "../Assets/Book.png"
-import Eco_conscius from "../Assets/Eco_conscius.png"
-import Movie_Files from "../Assets/movie_files.png"
-import Music from "../Assets/Music.png"
-import Newspaper from "../Assets/Newspaper.png"
-import Takeout from "../Assets/Takeout_boxes.png"
-import Walking from "../Assets/walking.png"
+import Among_Nature from "../../../Assets/Among_Nature.png"
+import Barista from "../../../Assets/Barista.png"
+import Book from "../../../Assets/Book.png"
+import Eco_conscius from "../../../Assets/Eco_conscius.png"
+import Movie_Files from "../../../Assets/movie_files.png"
+import Music from "../../../Assets/Music.png"
+import Newspaper from "../../../Assets/Newspaper.png"
+import Takeout from "../../../Assets/Takeout_boxes.png"
+import Walking from "../../../Assets/walking.png"
 
 const Container = styled.div`
   width: 100%;

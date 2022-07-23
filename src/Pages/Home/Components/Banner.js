@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 //IMPORTING COMPONENTS
-import Appreciate from "../Assets/Appreciation.png"
+import Appreciate from "../../../Assets/Appreciation.png"
 
 //FONTS
 // font-family: 'Nunito', sans-serif;

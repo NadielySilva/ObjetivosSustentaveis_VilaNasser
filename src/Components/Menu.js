@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 //FONTS
 // font-family: 'Nunito', sans-serif;
@@ -58,13 +59,29 @@ const ListItem = styled.li`
   }
 `;
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: #fff;
+
+  :hover{
+    color: #FF9F1C;
+    cursor: pointer;
+  }
+`;
+
 export default function Menu() {
   return (
     <Container>
       <List>
-        <ListItem>Início</ListItem>
-        <ListItem>Vila Nasser</ListItem>
-        <ListItem>Objetivos</ListItem>
+        <ListItem>
+          <StyledLink to="/">Início</StyledLink>
+        </ListItem>
+        <ListItem>
+          <StyledLink to="VilaNasser">Vila Nasser</StyledLink>
+        </ListItem>
+        <ListItem>
+          <StyledLink to="Objectives">Objetivos</StyledLink>
+        </ListItem>
         <ListItem>Portifólio</ListItem>
       </List>
     </Container>
