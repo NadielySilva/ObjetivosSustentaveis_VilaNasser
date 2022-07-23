@@ -50,7 +50,6 @@ const SubtitleH3 = styled.h3`
 
 const Paragraph = styled.p`
   font-size: 0.85rem;
-  text-overflow: ellipsis;
   overflow: hidden;
   line-height: 1.05rem;
   width: 14vw;

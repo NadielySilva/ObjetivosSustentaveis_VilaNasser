@@ -5,24 +5,27 @@ import styled from 'styled-components';
 import Highlight from './Highlight';
 import Card from './Card';
 import Statistics from './Statistics';
+import SendMessage from './SendMessage';
 
 const Container = styled.div`
   width: 100%;
   height: 100vh;
-
 `;
 
-
+const HighlightContainer = styled.div`
+  margin-left: 24px;
+`;
 
 export default function Main() {
   return (
     <Container>
-      <div>
+      <HighlightContainer>
         <Highlight />
         <Highlight />
-      </div>
+      </HighlightContainer>
       <Card />
       <Statistics />
+      <SendMessage />
     </Container>
   )
 }

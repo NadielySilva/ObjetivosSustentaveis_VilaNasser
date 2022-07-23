@@ -5,6 +5,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 import Header from './Components/Header';
 import Banner from './Components/Banner';
 import Main from './Components/Main';
+import Footer from './Components/Footer';
 
 //FONTS
 // font-family: 'Nunito', sans-serif;
@@ -32,6 +33,7 @@ export default class App extends Component {
         <Header />
         <Banner />
         <Main />
+        <Footer />
       </Container>
     )
   }
