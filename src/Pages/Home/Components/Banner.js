@@ -64,7 +64,7 @@ const HighlightedText = styled.p`
   }
 `;
 
-const Title = styled.h1`
+const Title = styled.h2`
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
