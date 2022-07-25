@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 //IMPORTING COMPONENTS
 import Modal from './Components/Modal';
+import ShowModal from './Components/ShowModal';
 
 //IMPORTING ASSETS
 import Among_Nature from "../../Assets/Among_Nature.png"
@@ -30,41 +31,6 @@ const ButtonContainer = styled.div`
   height: 45vh;
   display: flex;
   flex-wrap: wrap;
-`;
-
-const OpenObjective = styled.button`
-  width: 20vw;
-  height: 16vh;
-  display: flex;
-  align-items: center;
-  border: none;
-  border-radius: 18px;
-  padding: 3px;
-  margin-left: 24px;
-  margin-bottom: 24px;
-  background-color: rgba(255, 159, 28, 0.45);
-
-  :hover{
-    cursor: pointer;
-    background-color: rgba(98, 138, 86, 0.45);
-  }
-`;
-
-const OpenObjectiveImg = styled.img`
-  width: 9vw;
-  height: 12vh;
-  object-fit: contain;
-`;
-
-const SpanH3 = styled.span`
-  font-family: 'Nunito', sans-serif;
-  font-size: 0.85rem;
-  font-weight: bold;
-  text-align: center;
-  line-height: 0.85rem;
-  display: inline-block;
-  width: 10vw;
-  height: 10vh;
 `;
 
 const Title = styled.h1`
@@ -126,10 +92,7 @@ export default class Objectives extends Component {
         <Title>Objetivos de Desenvolvimento Sustentável Vila Nasser</Title>
         <ButtonContainer>
           {this.state.info.map((item) => (
-            <OpenObjective>
-              <OpenObjectiveImg src={item.CardContainer_img} alt={item.CardContainer_title} />
-              <SpanH3>{item.CardContainer_title}</SpanH3>
-            </OpenObjective>
+            <ShowModal image={item.CardContainer_img} title={item.CardContainer_title} />
           ))}
         </ButtonContainer>
         {this.state.info.map((item) => (
