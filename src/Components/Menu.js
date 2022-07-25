@@ -32,11 +32,12 @@ const List = styled.ul`
   }
 `;
 
-const ListItem = styled.li`
+const StyledLink = styled(Link)`
   font-family: 'Kanit', sans-serif;
   font-size: 1rem;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   word-break: break-word;
   color: #FFFFFF;
   line-height: 10vh;
@@ -49,23 +50,25 @@ const ListItem = styled.li`
     cursor: pointer;
     border-bottom: 3px solid #FF9F1C;
   }
-
-  @media screen and (max-width: 426px){
-    font-size: 0.85rem;
-    word-break: break-word;
-    line-height: 5vh;
-    width: 19.5vw;
-    height: 5vh;
-  }
 `;
 
-const StyledLink = styled(Link)`
+const Anchor = styled.a`
+  font-family: 'Kanit', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
+  word-break: break-word;
+  color: #FFFFFF;
+  line-height: 10vh;
+  list-style-type: none;
+  width: 12vw;
+  height: 10vh;
 
   :hover{
     color: #FF9F1C;
     cursor: pointer;
+    border-bottom: 3px solid #FF9F1C;
   }
 `;
 
@@ -73,16 +76,10 @@ export default function Menu() {
   return (
     <Container>
       <List>
-        <ListItem>
-          <StyledLink to="/">Início</StyledLink>
-        </ListItem>
-        <ListItem>
-          <StyledLink to="VilaNasser">Vila Nasser</StyledLink>
-        </ListItem>
-        <ListItem>
+          <StyledLink to="/">Início</StyledLink>        
+          <StyledLink to="VilaNasser">Vila Nasser</StyledLink>        
           <StyledLink to="Objectives">Objetivos</StyledLink>
-        </ListItem>
-        <ListItem>Portifólio</ListItem>
+        <Anchor target='_blank' rel="noreferrer" href='https://nadielysilva.netlify.app'>Portifólio</Anchor>
       </List>
     </Container>
   )
