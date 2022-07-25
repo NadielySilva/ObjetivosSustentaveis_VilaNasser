@@ -3,7 +3,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
 } from 'react-router-dom';
 
 //IMPORTING COMPONENTS

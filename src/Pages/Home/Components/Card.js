@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+//IMPORTING COMPONENTS
+import KnowMoreBtn from './KnowMoreBtn';
+
 //IMPORTING ASSETS
 import Among_Nature from "../../../Assets/Among_Nature.png"
 import Barista from "../../../Assets/Barista.png"
@@ -56,32 +59,6 @@ const Paragraph = styled.p`
   height: 18vh;
 `;
 
-const PrimaryBtn = styled.button`
-  font-family: 'Kanit', sans-serif;
-  font-weight: 500;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  color: #628A56;
-  width: 12vw;
-  height: 6vh;
-  border: none;
-  border-radius: 6vh;
-  background-color: #FFBF69;
-
-  :hover{
-    cursor: pointer;
-    background-color: #fff;
-  }
-`;
-
-const TertiaryBtn = styled(PrimaryBtn)`
-  background-color: transparent;
-  
-  :hover{
-    cursor: pointer;
-    background-color: #FFBF69;
-  }
-`;
 
 export default class Card extends Component{
 
@@ -134,7 +111,7 @@ export default class Card extends Component{
             <Image src={item.CardContainer_img} alt="ilustração sobre $`{item.CardContainer_title}`"/>
             <SubtitleH3>{item.CardContainer_title}</SubtitleH3>
             <Paragraph>{item.CardContainer_text}</Paragraph>
-            <TertiaryBtn>Saiba mais</TertiaryBtn>
+            <KnowMoreBtn onClick={'Objectives'}/>
           </CardContainer>
         ))}
         
@@ -142,3 +119,5 @@ export default class Card extends Component{
     )
   }
 }
+
+
